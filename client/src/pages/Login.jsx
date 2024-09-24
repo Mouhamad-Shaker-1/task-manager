@@ -43,7 +43,7 @@ export const action =
 
     try {
       const response = await axios.post(
-        "https://taskmanagerms-hbb3uppc.b4a.run/auth/login",
+        "https://taskmanagerms-hbb3uppc.b4a.run/api/v1/auth/login",
         { email, password }
       );
       const data = response.data;
