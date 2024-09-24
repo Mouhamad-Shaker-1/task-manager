@@ -59,7 +59,7 @@ const DashboardHeader = ({ isSidebarOpen, toggleSidebar }) => {
   const AvatarCurrentUser = () => {
     const urlImage = currentUser
       ? currentUser?.profileImage !== "" &&
-        `http://localhost:3000${currentUser.profileImage}`
+        `https://taskmanagerms-hbb3uppc.b4a.run${currentUser.profileImage}`
       : "";
     return (
       <Avatar
