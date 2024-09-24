@@ -32,6 +32,10 @@ app.use(helmet())
 app.use(cors())
 app.use(xss())
 
+app.get('/', (req, res) => {
+  res.send('task manager api')
+})
+
 app.use('/uploads', express.static(__dirname + '/uploads'))
 
 app.use('/api/v1/auth', userRouter)
