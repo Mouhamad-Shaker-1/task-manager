@@ -41,7 +41,7 @@ export const action =
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/v1/auth/register",
+        "https://taskmanagerms-hbb3uppc.b4a.run/auth/register",
         { name, lastName, email, password, location }
       );
       const data = response.data;
