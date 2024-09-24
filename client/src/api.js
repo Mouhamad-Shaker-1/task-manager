@@ -2,7 +2,7 @@ import axios from "axios";
 import { requireAuth } from "./utils";
 import { toast } from "react-toastify";
 
-const urlAPI = "http://localhost:3000";
+const urlAPI = "https://taskmanagerms-hbb3uppc.b4a.run";
 
 export const deleteTaskFromAPI = async (taskID) => {
   const token = await requireAuth();
